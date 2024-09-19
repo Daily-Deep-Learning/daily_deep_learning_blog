@@ -39,7 +39,7 @@ const Pagination = ({ posts, searchTerm }) => {
       }
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="bg-gray-100 dark:bg-gray-900 flex flex-col items-center">
             {/* Display current posts */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {currentPosts.map((post) => (
@@ -48,7 +48,7 @@ const Pagination = ({ posts, searchTerm }) => {
             </div>
 
             {/* Pagination controls */}
-            <div className="mt-6 flex justify-center items-center space-x-2">
+            <div className="mb-6 mt-6 flex justify-center items-center space-x-2">
                 {/* First page button */}
                 <button
                     onClick={() => paginate(1)}
