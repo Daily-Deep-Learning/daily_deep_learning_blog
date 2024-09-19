@@ -4,7 +4,7 @@ import './App.css';
 import { Footer_comp } from './components/Footer_comp';
 import Navbar from './components/Navbar';
 import Post from './components/Post';
-import Pagination from './components/Pagination';
+import Pagination from './components/pagination';
 import About from './components/About';
 import postData from '../public/assets/data.json';
 
