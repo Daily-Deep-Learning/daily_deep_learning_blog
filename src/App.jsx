@@ -4,7 +4,7 @@ import './App.css';
 import { Footer_comp } from './components/Footer_comp';
 import Navbar from './components/Navbar';
 import Post from './components/Post';
-import Pagination from './components/pagination';
+import Pagination from './components/Pagination';
 import About from './components/About';
 import postData from '../public/assets/data.json';
 
@@ -42,9 +42,7 @@ function App() {
 
   useEffect(() => {
     // Sort posts by date in descending order (most recent first)
-    const sorted = [...postData].sort((a, b) => 
-      new Date(b.post_date) - new Date(a.post_date)
-    );
+    const sorted = [...postData].sort((a, b) => new Date(b.post_date) - new Date(a.post_date));
     setSortedPosts(sorted);
   }, []);
 
@@ -55,12 +53,18 @@ function App() {
 
   return (
     <Router>
-      <AppContent 
-        sortedPosts={sortedPosts} 
-        searchResults={searchResults}
-        searchTerm={searchTerm}
-        handleSearch={handleSearch}
-      />
+      <div className="flex flex-col min-h-screen">
+        <Navbar posts={sortedPosts} onSearch={handleSearch} />
+        <main className="flex-grow">
+          <AppContent 
+            sortedPosts={sortedPosts} 
+            searchResults={searchResults}
+            searchTerm={searchTerm}
+            handleSearch={handleSearch}
+          />
+        </main>
+        <Footer_comp />
+      </div>
     </Router>
   );
 }
@@ -69,34 +73,30 @@ function AppContent({ sortedPosts, searchResults, searchTerm, handleSearch }) {
   useReloadToHome(); // Use the custom hook here
 
   return (
-    <div>
-      <Navbar posts={sortedPosts} onSearch={handleSearch} />
-      <Routes>
-        {/* Redirect to latest post if on the root path */}
-        <Route path="/" element={<NavigateToLatestPost sortedPosts={sortedPosts} />} />
-        
-        {/* Specific post by ID */}
-        <Route path="/post/:post_id" element={<Post posts={sortedPosts} />} />
-        
-        {/* All posts pagination */}
-        <Route 
-          path="/all-posts" 
-          element={
-            <Pagination 
-              posts={searchResults || sortedPosts} 
-              searchTerm={searchTerm}
-            />
-          } 
-        />
-        
-        {/* About page */}
-        <Route path="/about" element={<About />} />
-        
-        {/* Redirect any unmatched routes */}
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-      <Footer_comp />
-    </div>
+    <Routes>
+      {/* Redirect to latest post if on the root path */}
+      <Route path="/" element={<NavigateToLatestPost sortedPosts={sortedPosts} />} />
+      
+      {/* Specific post by ID */}
+      <Route path="/post/:post_id" element={<Post posts={sortedPosts} />} />
+      
+      {/* All posts pagination */}
+      <Route 
+        path="/all-posts" 
+        element={
+          <Pagination 
+            posts={searchResults || sortedPosts} 
+            searchTerm={searchTerm}
+          />
+        } 
+      />
+      
+      {/* About page */}
+      <Route path="/about" element={<About />} />
+      
+      {/* Redirect any unmatched routes */}
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 }
 

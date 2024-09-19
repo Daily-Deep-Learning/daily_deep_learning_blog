@@ -1,8 +1,8 @@
 [
     {
       "post_id": 1,
-      "post_name": "twitter to React",
-      "post_desc": "Data Science Roadmap.",
+      "post_name": "Data Science Roadmap",
+      "post_desc": "All u need to know about Data Science Roadmaps",
       "post_image": "https://media.istockphoto.com/id/691423398/vector/winding-road-on-a-white-isolated-background-with-pin-pointers.jpg?s=612x612&w=0&k=20&c=PaRJPzxTEMgSc09prPpitCxGPMUcqMtwPSV4FxNfrGw=",
       "post_link": "#",
       "related_links": [
