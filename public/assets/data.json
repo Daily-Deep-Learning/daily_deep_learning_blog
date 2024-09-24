@@ -2,14 +2,15 @@
     {
       "post_id": 1,
       "post_name": "Data Science Roadmap",
-      "post_desc": "All u need to know about Data Science Roadmaps",
+      "post_desc": "So You Want to Be a Data Scientist? Here’s Your Roadmap to Success!",
       "post_image": "https://media.istockphoto.com/id/691423398/vector/winding-road-on-a-white-isolated-background-with-pin-pointers.jpg?s=612x612&w=0&k=20&c=PaRJPzxTEMgSc09prPpitCxGPMUcqMtwPSV4FxNfrGw=",
-      "post_link": "#",
+      "post_link": "https://medium.com/@dailydeeplearning/so-you-want-to-be-a-data-scientist-heres-your-roadmap-to-success-dc0735d0e9ec",
       "related_links": [
-        "https://roadmap.sh/ai-data-scientist",
-        "https://github.com/Moataz-Elmesmary/Data-Science-Roadmap"
+        "https://github.com/Moataz-Elmesmary/Data-Science-Roadmap",
+        "https://github.com/krishnaik06/Perfect-Roadmap-To-Learn-Data-Science-In-2024",
+	"https://github.com/hemansnation/God-Level-AI/tree/master/05_Machine%20Learning#2--data-structure--algorithms"
       ],
-      "post_date": "2024-09-20"
+      "post_date": "2024-09-24"
     }
   ]
   
