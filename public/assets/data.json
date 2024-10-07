@@ -11,6 +11,19 @@
 	"https://github.com/hemansnation/God-Level-AI/tree/master/05_Machine%20Learning#2--data-structure--algorithms"
       ],
       "post_date": "2024-09-24"
+    },
+    {
+      "post_id": 2,
+      "post_name": "Linear Regression Resources",
+      "post_desc": "All the resources you need to master Linear Regression",
+      "post_image": "https://media.geeksforgeeks.org/wp-content/uploads/20231129130431/11111111.png",
+      "post_link": "#",
+      "related_links": [
+        "https://youtu.be/7ArmBVF2dCs?si=SnCb5nxw5R-mYaAU",
+	      "https://mlu-explain.github.io/linear-regression/",
+        "https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21"
+      ],
+      "post_date": "2024-10-07"
     }
   ]
   
