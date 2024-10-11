@@ -24,6 +24,17 @@
         "https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21"
       ],
       "post_date": "2024-10-07"
+    },
+    {
+      "post_id": 3,
+      "post_name": "Logistic Regression Resources",
+      "post_desc": "All the resources you need to master Logistic Regression",
+      "post_image": "https://www.saedsayad.com/images/LogReg_1.png",
+      "post_link": "#",
+      "related_links": [
+        "https://web.stanford.edu/~jurafsky/slp3/5.pdf",
+      ],
+      "post_date": "2024-10-11"
     }
   ]
   
