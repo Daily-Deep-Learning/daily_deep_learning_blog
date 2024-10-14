@@ -5,8 +5,10 @@ import { Footer_comp } from './components/Footer_comp';
 import Navbar from './components/Navbar';
 import Post from './components/Post';
 import Pagination from './components/pagination';
+import PaginatedLinks from './components/PaginatedLinks'; // Import PaginatedLinks component
 import About from './components/About';
 import postData from '../public/assets/data.json';
+import linkData from '../public/assets/linkdata.json';
 
 // Custom hook to handle reload-to-home behavior
 function useReloadToHome() {
@@ -37,6 +39,7 @@ function useReloadToHome() {
 
 function App() {
   const [sortedPosts, setSortedPosts] = useState([]);
+  const [sortedLinks, setSortedLinks] = useState([]);
   const [searchResults, setSearchResults] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -44,6 +47,12 @@ function App() {
     // Sort posts by date in descending order (most recent first)
     const sorted = [...postData].sort((a, b) => new Date(b.post_date) - new Date(a.post_date));
     setSortedPosts(sorted);
+  }, []);
+
+  useEffect(() => {
+    // Sort links by date in descending order (most recent first)
+    const sorted = [...linkData].sort((a, b) => new Date(b.link_date) - new Date(a.link_date));
+    setSortedLinks(sorted);
   }, []);
 
   const handleSearch = (results, term) => {
@@ -58,6 +67,7 @@ function App() {
         <main className="flex-grow">
           <AppContent 
             sortedPosts={sortedPosts} 
+            sortedLinks={sortedLinks}
             searchResults={searchResults}
             searchTerm={searchTerm}
             handleSearch={handleSearch}
@@ -69,7 +79,7 @@ function App() {
   );
 }
 
-function AppContent({ sortedPosts, searchResults, searchTerm, handleSearch }) {
+function AppContent({ sortedPosts, sortedLinks, searchResults, searchTerm, handleSearch }) {
   useReloadToHome(); // Use the custom hook here
 
   return (
@@ -87,6 +97,16 @@ function AppContent({ sortedPosts, searchResults, searchTerm, handleSearch }) {
           <Pagination 
             posts={searchResults || sortedPosts} 
             searchTerm={searchTerm}
+          />
+        } 
+      />
+
+      {/* Daily Picks Pagination - no search functionality */}
+      <Route 
+        path="/daily-picks" 
+        element={
+          <PaginatedLinks 
+            links={sortedLinks}  // Removed searchResults and searchTerm
           />
         } 
       />
