@@ -1,52 +1,63 @@
 [
-    {
-      "post_id": 1,
-      "post_name": "Data Science Roadmap",
-      "post_desc": "So You Want to Be a Data Scientist? Here’s Your Roadmap to Success!",
-      "post_image": "https://media.istockphoto.com/id/691423398/vector/winding-road-on-a-white-isolated-background-with-pin-pointers.jpg?s=612x612&w=0&k=20&c=PaRJPzxTEMgSc09prPpitCxGPMUcqMtwPSV4FxNfrGw=",
-      "post_link": "https://medium.com/@dailydeeplearning/so-you-want-to-be-a-data-scientist-heres-your-roadmap-to-success-dc0735d0e9ec",
-      "related_links": [
-        "https://github.com/Moataz-Elmesmary/Data-Science-Roadmap",
-        "https://github.com/krishnaik06/Perfect-Roadmap-To-Learn-Data-Science-In-2024",
-	"https://github.com/hemansnation/God-Level-AI/tree/master/05_Machine%20Learning#2--data-structure--algorithms"
-      ],
-      "post_date": "2024-09-24"
-    },
-    {
-      "post_id": 2,
-      "post_name": "Linear Regression Resources",
-      "post_desc": "All the resources you need to master Linear Regression",
-      "post_image": "https://media.geeksforgeeks.org/wp-content/uploads/20231129130431/11111111.png",
-      "post_link": "#",
-      "related_links": [
-        "https://youtu.be/7ArmBVF2dCs?si=SnCb5nxw5R-mYaAU",
-	      "https://mlu-explain.github.io/linear-regression/",
-        "https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21"
-      ],
-      "post_date": "2024-10-07"
-    },
-    {
-      "post_id": 3,
-      "post_name": "Logistic Regression Resources",
-      "post_desc": "All the resources you need to master Logistic Regression",
-      "post_image": "https://www.saedsayad.com/images/LogReg_1.png",
-      "post_link": "#",
-      "related_links": [
-        "https://web.stanford.edu/~jurafsky/slp3/5.pdf",
-        "https://github.com/Daily-Deep-Learning/Projects"
-      ],
-      "post_date": "2024-10-11"
-    },
-    {
-      "post_id": 4,
-      "post_name": "GLM Resources",
-      "post_desc": "All the resources you need to master GLM",
-      "post_image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*yuqk_tRMHU4UchPm.jpg",
-      "post_link": "#",
-      "related_links": [
-        "https://medium.com/@sahin.samia/a-comprehensive-introduction-to-generalized-linear-models-fd773d460c1d",
-        "https://github.com/Daily-Deep-Learning/Projects"
-      ],
-      "post_date": "2024-10-26"
-    }
-  ]
+  {
+    "post_id": 1,
+    "post_name": "Data Science Roadmap",
+    "post_desc": "So You Want to Be a Data Scientist? Here’s Your Roadmap to Success!",
+    "post_image": "https://media.istockphoto.com/id/691423398/vector/winding-road-on-a-white-isolated-background-with-pin-pointers.jpg?s=612x612&w=0&k=20&c=PaRJPzxTEMgSc09prPpitCxGPMUcqMtwPSV4FxNfrGw=",
+    "post_link": "https://medium.com/@dailydeeplearning/so-you-want-to-be-a-data-scientist-heres-your-roadmap-to-success-dc0735d0e9ec",
+    "related_links": [
+      { "author": "Moataz Elmesmary", "link": "https://github.com/Moataz-Elmesmary/Data-Science-Roadmap" },
+      { "author": "Krish Naik", "link": "https://github.com/krishnaik06/Perfect-Roadmap-To-Learn-Data-Science-In-2024" },
+      { "author": "Himanshu Ramchandani", "link": "https://github.com/hemansnation/God-Level-AI/tree/master/05_Machine%20Learning#2--data-structure--algorithms" }
+    ],
+    "post_date": "2024-09-24"
+  },
+  {
+    "post_id": 2,
+    "post_name": "Linear Regression Resources",
+    "post_desc": "All the resources you need to master Linear Regression",
+    "post_image": "https://media.geeksforgeeks.org/wp-content/uploads/20231129130431/11111111.png",
+    "post_link": "#",
+    "related_links": [
+      { "author": "StatQuest with Josh Starmer", "link": "https://youtu.be/7ArmBVF2dCs?si=SnCb5nxw5R-mYaAU" },
+      { "author": "Jared Wilber", "link": "https://mlu-explain.github.io/linear-regression/" },
+      { "author": "Robert Kwiatkowski", "link": "https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21" }
+    ],
+    "post_date": "2024-10-07"
+  },
+  {
+    "post_id": 3,
+    "post_name": "Logistic Regression Resources",
+    "post_desc": "All the resources you need to master Logistic Regression",
+    "post_image": "https://www.saedsayad.com/images/LogReg_1.png",
+    "post_link": "#",
+    "related_links": [
+      { "author": "Stanford", "link": "https://web.stanford.edu/~jurafsky/slp3/5.pdf" },
+      { "author": "Daily Deep Learning", "link": "https://github.com/Daily-Deep-Learning/Projects" }
+    ],
+    "post_date": "2024-10-11"
+  },
+  {
+    "post_id": 4,
+    "post_name": "GLM Resources",
+    "post_desc": "All the resources you need to master GLM",
+    "post_image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*yuqk_tRMHU4UchPm.jpg",
+    "post_link": "#",
+    "related_links": [
+      { "author": "Sahin Ahmed", "link": "https://medium.com/@sahin.samia/a-comprehensive-introduction-to-generalized-linear-models-fd773d460c1d" },
+      { "author": "Daily Deep Learning", "link": "https://github.com/Daily-Deep-Learning/Projects" }
+    ],
+    "post_date": "2024-10-26"
+  },
+  {
+    "post_id": 5,
+    "post_name": "KNN Resources",
+    "post_desc": "All the resources you need to master KNN",
+    "post_image": "https://www.theclickreader.com/wp-content/uploads/2020/08/23-1024x576.png",
+    "post_link": "#",
+    "related_links": [
+      { "author": "Nadeem", "link": "https://nadeemm.medium.com/introduction-to-k-nearest-neighbor-knn-algorithm-f2c6bef73d58#:~:text=KNN%20works%20by%20finding%20the,in%20the%20case%20of%20regression)." }
+    ],
+    "post_date": "2024-10-31"
+  }
+]

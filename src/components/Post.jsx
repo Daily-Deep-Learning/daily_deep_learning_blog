@@ -59,13 +59,14 @@ const Post = ({ posts }) => {
         <ul className="list-none space-y-2">
           {currentPost.related_links.map((link, index) => (
             <li key={index} className="truncate text-center">
+              <span className="font-semibold dark:text-gray-300">{link.author}:</span>{' '}
               <a
-                href={link}
+                href={link.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
               >
-                {link}
+                {link.link}
               </a>
             </li>
           ))}
@@ -73,6 +74,6 @@ const Post = ({ posts }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Post;

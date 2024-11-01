@@ -1,12 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { formatDate } from './Utils';
 
 const Link = ({ link }) => {
-  const navigate = useNavigate();
-
   const handleLinkClick = () => {
-    window.open(link.link_url, '_blank');  // Opens the link in a new tab
+    window.open(link.link_url, '_blank'); // Opens the link in a new tab
   };
 
   return (
@@ -15,9 +12,18 @@ const Link = ({ link }) => {
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {link.link_title}
         </h5>
-        <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
-        {formatDate(link.link_date)}
+        
+        {/* Author Name */}
+        <p className="mb-1 text-sm text-gray-600 dark:text-gray-400">
+          <span className="font-semibold">Author:</span> {link.author}
         </p>
+
+        {/* Link Date */}
+        <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
+          {formatDate(link.link_date)}
+        </p>
+        
+        {/* Link URL */}
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           <a href={link.link_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
             Visit link
